@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ben Dodson. Template by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>National Transit Database</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">National Transit Database</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="overview.html">
+                                <span data-feather="home"></span>Overview
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rail.html">
+                                <span data-feather="user"></span>Rail Ridership
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="corner-up-right"></span>Vehicle Revenue Miles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="clock"></span>Vehicle Revenue Hours
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="target"></span>Vehicles Operated in Maximum Service
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="dollar-sign"></span>Fare Performance
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Total Trips by Mode Groups</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+
+
+                    </div>
+                </div>
+
+                <canvas class="my-4 w-100" id="chartHero" width="900" height="380"></canvas>
+
+                <h2>Metro Areas with Highest Combined Ridership</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th style="text-align:right">Metro Area</th>
+                                <th style="text-align:right">2011</th>
+                                <th style="text-align:right">2012</th>
+                                <th style="text-align:right">2013</th>
+                                <th style="text-align:right">2014</th>
+                                <th style="text-align:right">2015</th>
+                                <th style="text-align:right">2016</th>
+                                <th style="text-align:right">2017</th>
+                                <th style="text-align:right">2018</th>
+                                <th style="text-align:right">2019</th>
+                                <th style="text-align:right">2020</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:right">New York-Newark, NY-NJ-CT</td>
+                                <td style="text-align:right">4,114,454,266</td>
+                                <td style="text-align:right">4,178,127,209</td>
+                                <td style="text-align:right">4,281,824,153</td>
+                                <td style="text-align:right">4,382,948,773</td>
+                                <td style="text-align:right">4,264,746,475</td>
+                                <td style="text-align:right">4,289,902,357</td>
+                                <td style="text-align:right">4,251,568,066</td>
+                                <td style="text-align:right">4,195,425,428</td>
+                                <td style="text-align:right">4,294,356,228</td>
+                                <td style="text-align:right">1,898,438,024</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Los Angeles-Long Beach-Anaheim, CA</td>
+                                <td style="text-align:right">665,111,966</td>
+                                <td style="text-align:right">679,932,399</td>
+                                <td style="text-align:right">684,752,289</td>
+                                <td style="text-align:right">670,597,547</td>
+                                <td style="text-align:right">633,218,959</td>
+                                <td style="text-align:right">590,711,859</td>
+                                <td style="text-align:right">563,329,604</td>
+                                <td style="text-align:right">547,368,592</td>
+                                <td style="text-align:right">528,012,651</td>
+                                <td style="text-align:right">292,247,059</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Chicago, IL-IN</td>
+                                <td style="text-align:right">646,581,286</td>
+                                <td style="text-align:right">664,107,636</td>
+                                <td style="text-align:right">647,713,736</td>
+                                <td style="text-align:right">632,593,053</td>
+                                <td style="text-align:right">630,853,686</td>
+                                <td style="text-align:right">610,510,341</td>
+                                <td style="text-align:right">590,579,701</td>
+                                <td style="text-align:right">575,381,540</td>
+                                <td style="text-align:right">554,219,960</td>
+                                <td style="text-align:right">232,463,055</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">San Francisco-Oakland, CA</td>
+                                <td style="text-align:right">427,155,883</td>
+                                <td style="text-align:right">440,216,557</td>
+                                <td style="text-align:right">443,414,066</td>
+                                <td style="text-align:right">465,565,573</td>
+                                <td style="text-align:right">461,732,698</td>
+                                <td style="text-align:right">463,289,821</td>
+                                <td style="text-align:right">450,532,288</td>
+                                <td style="text-align:right">450,195,797</td>
+                                <td style="text-align:right">444,902,197</td>
+                                <td style="text-align:right">167,412,939</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Washington, DC-VA-MD</td>
+                                <td style="text-align:right">483,610,888</td>
+                                <td style="text-align:right">478,604,703</td>
+                                <td style="text-align:right">475,029,363</td>
+                                <td style="text-align:right">471,535,602</td>
+                                <td style="text-align:right">454,717,386</td>
+                                <td style="text-align:right">418,831,536</td>
+                                <td style="text-align:right">411,223,893</td>
+                                <td style="text-align:right">406,781,462</td>
+                                <td style="text-align:right">420,971,676</td>
+                                <td style="text-align:right">152,821,454</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Boston, MA-NH-RI</td>
+                                <td style="text-align:right">398,410,434</td>
+                                <td style="text-align:right">408,892,715</td>
+                                <td style="text-align:right">408,159,239</td>
+                                <td style="text-align:right">422,549,131</td>
+                                <td style="text-align:right">407,060,829</td>
+                                <td style="text-align:right">400,922,832</td>
+                                <td style="text-align:right">387,749,089</td>
+                                <td style="text-align:right">377,843,361</td>
+                                <td style="text-align:right">373,619,884</td>
+                                <td style="text-align:right">151,775,067</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Philadelphia, PA-NJ-DE-MD</td>
+                                <td style="text-align:right">358,510,646</td>
+                                <td style="text-align:right">371,454,795</td>
+                                <td style="text-align:right">379,627,911</td>
+                                <td style="text-align:right">367,437,531</td>
+                                <td style="text-align:right">372,600,481</td>
+                                <td style="text-align:right">357,340,922</td>
+                                <td style="text-align:right">343,395,001</td>
+                                <td style="text-align:right">336,713,873</td>
+                                <td style="text-align:right">330,935,458</td>
+                                <td style="text-align:right">146,284,784</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Seattle, WA</td>
+                                <td style="text-align:right">190,667,153</td>
+                                <td style="text-align:right">196,621,419</td>
+                                <td style="text-align:right">201,576,037</td>
+                                <td style="text-align:right">207,660,100</td>
+                                <td style="text-align:right">210,246,131</td>
+                                <td style="text-align:right">219,042,567</td>
+                                <td style="text-align:right">223,859,330</td>
+                                <td style="text-align:right">226,709,331</td>
+                                <td style="text-align:right">224,989,946</td>
+                                <td style="text-align:right">102,498,614</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Miami, FL</td>
+                                <td style="text-align:right">154,084,144</td>
+                                <td style="text-align:right">168,182,276</td>
+                                <td style="text-align:right">171,404,967</td>
+                                <td style="text-align:right">169,275,856</td>
+                                <td style="text-align:right">160,270,008</td>
+                                <td style="text-align:right">145,429,399</td>
+                                <td style="text-align:right">132,514,739</td>
+                                <td style="text-align:right">125,521,437</td>
+                                <td style="text-align:right">122,183,930</td>
+                                <td style="text-align:right">73,126,766</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Atlanta, GA</td>
+                                <td style="text-align:right">146,444,631</td>
+                                <td style="text-align:right">140,060,694</td>
+                                <td style="text-align:right">138,436,761</td>
+                                <td style="text-align:right">139,422,887</td>
+                                <td style="text-align:right">142,948,895</td>
+                                <td style="text-align:right">135,051,428</td>
+                                <td style="text-align:right">131,484,367</td>
+                                <td style="text-align:right">124,562,869</td>
+                                <td style="text-align:right">121,467,905</td>
+                                <td style="text-align:right">60,009,224</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="script/dashboard.js"></script>
+</body>
+
+</html>
