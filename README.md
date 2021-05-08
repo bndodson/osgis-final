@@ -10,3 +10,5 @@ This dashboard was created to demonstrate some of the skills taught in Nathan Zi
 <br>(3) Use of the chart.js library
 <br>(4) Use of interactive UI elements
 <br>(5) Loading in additional libarires (Font Awesome)
+
+<img src="css/screenshot.png">
