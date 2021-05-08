@@ -72,17 +72,27 @@
                                 <i class="fas fa-bus-alt"></i> Bus Ridership
                             </a>
                         </li>
+                        <br>
+                        <br>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.transit.dot.gov/ntd">Documentation
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/bndodson/osgis-final">Repo
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Total Trips Taken on Non-Rail Modes</h1>
+                    <h1 class="h2">Top 10 Metro Areas by Non-Rail Ridership</h1>
                 </div>
                 Includes: Aerial Tramway, Commuter Bus, Bus, Bus Rapid Transit, Demand Response, Demand Response - Taxi, Ferryboat, Jitney, Publico, Trolleybus, Vanpool
                 <canvas class="my-4 w-100" id="chartBus" width="900" height="380"></canvas>
-                <h5>Ridership on Non-Rail Modes by Metro Area</h5>
+                <h5>Top 30 Metro Areas by Non-Rail Ridership</h5>
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
@@ -102,736 +112,395 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="text-align:right">Albuquerque, NM</td>
-                                <td style="text-align:right">1242174</td>
-                                <td style="text-align:right">1129303</td>
-                                <td style="text-align:right">1082588</td>
-                                <td style="text-align:right">1063217</td>
-                                <td style="text-align:right">931324</td>
-                                <td style="text-align:right">851409</td>
-                                <td style="text-align:right">811421</td>
-                                <td style="text-align:right">771602</td>
-                                <td style="text-align:right">744050</td>
-                                <td style="text-align:right">143462</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Anchorage, AK</td>
-                                <td style="text-align:right">115191</td>
-                                <td style="text-align:right">145260</td>
-                                <td style="text-align:right">156300</td>
-                                <td style="text-align:right">164674</td>
-                                <td style="text-align:right">178350</td>
-                                <td style="text-align:right">187309</td>
-                                <td style="text-align:right">192331</td>
-                                <td style="text-align:right">199666</td>
-                                <td style="text-align:right">203367</td>
-                                <td style="text-align:right">31960</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Atlanta, GA</td>
-                                <td style="text-align:right">74236211</td>
-                                <td style="text-align:right">70506376</td>
-                                <td style="text-align:right">69905386</td>
-                                <td style="text-align:right">71512588</td>
-                                <td style="text-align:right">72910654</td>
-                                <td style="text-align:right">69049736</td>
-                                <td style="text-align:right">67840334</td>
-                                <td style="text-align:right">65168178</td>
-                                <td style="text-align:right">62076516</td>
-                                <td style="text-align:right">24160976</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Austin, TX</td>
-                                <td style="text-align:right">469328</td>
-                                <td style="text-align:right">601754</td>
-                                <td style="text-align:right">815031</td>
-                                <td style="text-align:right">777894</td>
-                                <td style="text-align:right">837749</td>
-                                <td style="text-align:right">810567</td>
-                                <td style="text-align:right">825533</td>
-                                <td style="text-align:right">807869</td>
-                                <td style="text-align:right">671133</td>
-                                <td style="text-align:right">278779</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Baltimore, MD</td>
-                                <td style="text-align:right">31848557</td>
-                                <td style="text-align:right">33024577</td>
-                                <td style="text-align:right">32787710</td>
-                                <td style="text-align:right">31986161</td>
-                                <td style="text-align:right">29023363</td>
-                                <td style="text-align:right">27970113</td>
-                                <td style="text-align:right">26644551</td>
-                                <td style="text-align:right">24072215</td>
-                                <td style="text-align:right">23013297</td>
-                                <td style="text-align:right">8042910</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Boston, MA-NH-RI</td>
-                                <td style="text-align:right">270174531</td>
-                                <td style="text-align:right">277441582</td>
-                                <td style="text-align:right">278348525</td>
-                                <td style="text-align:right">282263005</td>
-                                <td style="text-align:right">266187194</td>
-                                <td style="text-align:right">268015256</td>
-                                <td style="text-align:right">257600261</td>
-                                <td style="text-align:right">250613922</td>
-                                <td style="text-align:right">247369946</td>
-                                <td style="text-align:right">86880308</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Buffalo, NY</td>
-                                <td style="text-align:right">6973287</td>
-                                <td style="text-align:right">6460209</td>
-                                <td style="text-align:right">5058439</td>
-                                <td style="text-align:right">4273515</td>
-                                <td style="text-align:right">5218485</td>
-                                <td style="text-align:right">4899621</td>
-                                <td style="text-align:right">4560644</td>
-                                <td style="text-align:right">4492168</td>
-                                <td style="text-align:right">4404283</td>
-                                <td style="text-align:right">2000000</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Charlotte, NC-SC</td>
-                                <td style="text-align:right">4796202</td>
-                                <td style="text-align:right">4967336</td>
-                                <td style="text-align:right">4977968</td>
-                                <td style="text-align:right">5130489</td>
-                                <td style="text-align:right">5142299</td>
-                                <td style="text-align:right">5316457</td>
-                                <td style="text-align:right">5280519</td>
-                                <td style="text-align:right">7430941</td>
-                                <td style="text-align:right">8987184</td>
-                                <td style="text-align:right">3921893</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Chattanooga, TN-GA</td>
-                                <td style="text-align:right">355856</td>
-                                <td style="text-align:right">372445</td>
-                                <td style="text-align:right">385991</td>
-                                <td style="text-align:right">399624</td>
-                                <td style="text-align:right">441205</td>
-                                <td style="text-align:right">481093</td>
-                                <td style="text-align:right">492660</td>
-                                <td style="text-align:right">490906</td>
-                                <td style="text-align:right">495336</td>
-                                <td style="text-align:right">159184</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Chicago, IL-IN</td>
-                                <td style="text-align:right">297599459</td>
-                                <td style="text-align:right">309069022</td>
-                                <td style="text-align:right">306326140</td>
-                                <td style="text-align:right">316095806</td>
-                                <td style="text-align:right">317924502</td>
-                                <td style="text-align:right">314439498</td>
-                                <td style="text-align:right">304252104</td>
-                                <td style="text-align:right">297741389</td>
-                                <td style="text-align:right">283207407</td>
-                                <td style="text-align:right">93775951</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Cincinnati, OH-KY-IN</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">330738</td>
-                                <td style="text-align:right">578180</td>
-                                <td style="text-align:right">485700</td>
-                                <td style="text-align:right">531592</td>
-                                <td style="text-align:right">168392</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Cleveland, OH</td>
-                                <td style="text-align:right">8432995</td>
-                                <td style="text-align:right">9096874</td>
-                                <td style="text-align:right">9321306</td>
-                                <td style="text-align:right">8982994</td>
-                                <td style="text-align:right">9047021</td>
-                                <td style="text-align:right">8885919</td>
-                                <td style="text-align:right">8019567</td>
-                                <td style="text-align:right">7911549</td>
-                                <td style="text-align:right">7151569</td>
-                                <td style="text-align:right">3227446</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Dallas-Fort Worth-Arlington, TX</td>
-                                <td style="text-align:right">29360884</td>
-                                <td style="text-align:right">30750463</td>
-                                <td style="text-align:right">31572362</td>
-                                <td style="text-align:right">32680210</td>
-                                <td style="text-align:right">32951730</td>
-                                <td style="text-align:right">32280024</td>
-                                <td style="text-align:right">32612836</td>
-                                <td style="text-align:right">31485900</td>
-                                <td style="text-align:right">31411896</td>
-                                <td style="text-align:right">18173901</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Denton-Lewisville, TX</td>
-                                <td style="text-align:right">214966</td>
-                                <td style="text-align:right">424617</td>
-                                <td style="text-align:right">519302</td>
-                                <td style="text-align:right">577440</td>
-                                <td style="text-align:right">558139</td>
-                                <td style="text-align:right">535630</td>
-                                <td style="text-align:right">481973</td>
-                                <td style="text-align:right">409667</td>
-                                <td style="text-align:right">387467</td>
-                                <td style="text-align:right">144246</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Denver-Aurora, CO</td>
-                                <td style="text-align:right">20694715</td>
-                                <td style="text-align:right">20639068</td>
-                                <td style="text-align:right">23773843</td>
-                                <td style="text-align:right">26363053</td>
-                                <td style="text-align:right">25518578</td>
-                                <td style="text-align:right">28902487</td>
-                                <td style="text-align:right">31595715</td>
-                                <td style="text-align:right">32941647</td>
-                                <td style="text-align:right">34296677</td>
-                                <td style="text-align:right">15418845</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Detroit, MI</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">2298841</td>
-                                <td style="text-align:right">2207333</td>
-                                <td style="text-align:right">2357520</td>
-                                <td style="text-align:right">2409894</td>
-                                <td style="text-align:right">2165351</td>
-                                <td style="text-align:right">3106791</td>
-                                <td style="text-align:right">3147354</td>
-                                <td style="text-align:right">2698599</td>
-                                <td style="text-align:right">459537</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">El Paso, TX-NM</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">70236</td>
-                                <td style="text-align:right">272976</td>
-                                <td style="text-align:right">68318</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Hartford, CT</td>
-                                <td style="text-align:right">614089</td>
-                                <td style="text-align:right">624516</td>
-                                <td style="text-align:right">900501</td>
-                                <td style="text-align:right">934642</td>
-                                <td style="text-align:right">853591</td>
-                                <td style="text-align:right">828721</td>
-                                <td style="text-align:right">786870</td>
-                                <td style="text-align:right">597363</td>
-                                <td style="text-align:right">660477</td>
-                                <td style="text-align:right">157014</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Houston, TX</td>
-                                <td style="text-align:right">10787896</td>
-                                <td style="text-align:right">11387090</td>
-                                <td style="text-align:right">11279881</td>
-                                <td style="text-align:right">13300551</td>
-                                <td style="text-align:right">16489939</td>
-                                <td style="text-align:right">18228011</td>
-                                <td style="text-align:right">18808109</td>
-                                <td style="text-align:right">18806354</td>
-                                <td style="text-align:right">18409049</td>
-                                <td style="text-align:right">10633194</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Jacksonville, FL</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">945811</td>
-                                <td style="text-align:right">1112360</td>
-                                <td style="text-align:right">1221092</td>
-                                <td style="text-align:right">1279008</td>
-                                <td style="text-align:right">1194221</td>
-                                <td style="text-align:right">967826</td>
-                                <td style="text-align:right">843225</td>
-                                <td style="text-align:right">770189</td>
-                                <td style="text-align:right">273143</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Johnstown, PA</td>
-                                <td style="text-align:right">88460</td>
-                                <td style="text-align:right">95584</td>
-                                <td style="text-align:right">74055</td>
-                                <td style="text-align:right">62737</td>
-                                <td style="text-align:right">54881</td>
-                                <td style="text-align:right">58431</td>
-                                <td style="text-align:right">63613</td>
-                                <td style="text-align:right">53024</td>
-                                <td style="text-align:right">64541</td>
-                                <td style="text-align:right">22311</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Kansas City, MO-KS</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">1399344</td>
-                                <td style="text-align:right">2057323</td>
-                                <td style="text-align:right">2108348</td>
-                                <td style="text-align:right">2228942</td>
-                                <td style="text-align:right">786059</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Kenosha, WI-IL</td>
-                                <td style="text-align:right">43164</td>
-                                <td style="text-align:right">40128</td>
-                                <td style="text-align:right">38825</td>
-                                <td style="text-align:right">44465</td>
-                                <td style="text-align:right">45947</td>
-                                <td style="text-align:right">51145</td>
-                                <td style="text-align:right">45120</td>
-                                <td style="text-align:right">39569</td>
-                                <td style="text-align:right">36658</td>
-                                <td style="text-align:right">3845</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Las Vegas-Henderson, NV</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">4128134</td>
-                                <td style="text-align:right">4024890</td>
-                                <td style="text-align:right">4548311</td>
-                                <td style="text-align:right">5082158</td>
-                                <td style="text-align:right">4940323</td>
-                                <td style="text-align:right">4816085</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Little Rock, AR</td>
-                                <td style="text-align:right">100402</td>
-                                <td style="text-align:right">104818</td>
-                                <td style="text-align:right">92543</td>
-                                <td style="text-align:right">99500</td>
-                                <td style="text-align:right">95220</td>
-                                <td style="text-align:right">64570</td>
-                                <td style="text-align:right">95118</td>
-                                <td style="text-align:right">42912</td>
-                                <td style="text-align:right">126882</td>
-                                <td style="text-align:right">17196</td>
+                                <td style="text-align:right">New York-Newark, NY-NJ-CT</td>
+                                <td style="text-align:right">1230612678</td>
+                                <td style="text-align:right">1240106017</td>
+                                <td style="text-align:right">1244283840</td>
+                                <td style="text-align:right">1236439843</td>
+                                <td style="text-align:right">1205894812</td>
+                                <td style="text-align:right">1208614956</td>
+                                <td style="text-align:right">1149234737</td>
+                                <td style="text-align:right">1157934945</td>
+                                <td style="text-align:right">1152750212</td>
+                                <td style="text-align:right">641135552</td>
                             </tr>
                             <tr>
                                 <td style="text-align:right">Los Angeles-Long Beach-Anaheim, CA</td>
-                                <td style="text-align:right">109507007</td>
-                                <td style="text-align:right">123092957</td>
-                                <td style="text-align:right">128051364</td>
-                                <td style="text-align:right">126460092</td>
-                                <td style="text-align:right">120958877</td>
-                                <td style="text-align:right">125290740</td>
-                                <td style="text-align:right">127013353</td>
-                                <td style="text-align:right">121589714</td>
-                                <td style="text-align:right">105812191</td>
-                                <td style="text-align:right">56095968</td>
+                                <td style="text-align:right">555604959</td>
+                                <td style="text-align:right">556839442</td>
+                                <td style="text-align:right">556700925</td>
+                                <td style="text-align:right">544137455</td>
+                                <td style="text-align:right">512260082</td>
+                                <td style="text-align:right">465421119</td>
+                                <td style="text-align:right">436316251</td>
+                                <td style="text-align:right">425778878</td>
+                                <td style="text-align:right">422200460</td>
+                                <td style="text-align:right">236151091</td>
                             </tr>
                             <tr>
-                                <td style="text-align:right">Memphis, TN-MS-AR</td>
-                                <td style="text-align:right">1157427</td>
-                                <td style="text-align:right">1492954</td>
-                                <td style="text-align:right">1366026</td>
-                                <td style="text-align:right">485131</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">302076</td>
-                                <td style="text-align:right">366666</td>
-                                <td style="text-align:right">101044</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Miami, FL</td>
-                                <td style="text-align:right">22243309</td>
-                                <td style="text-align:right">32569637</td>
-                                <td style="text-align:right">35302685</td>
-                                <td style="text-align:right">36060891</td>
-                                <td style="text-align:right">36168130</td>
-                                <td style="text-align:right">35525702</td>
-                                <td style="text-align:right">33146008</td>
-                                <td style="text-align:right">32562357</td>
-                                <td style="text-align:right">31619661</td>
-                                <td style="text-align:right">15754018</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Milwaukee, WI</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">156683</td>
-                                <td style="text-align:right">760321</td>
-                                <td style="text-align:right">261303</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Minneapolis-St. Paul, MN-WI</td>
-                                <td style="text-align:right">11104281</td>
-                                <td style="text-align:right">11198514</td>
-                                <td style="text-align:right">10950158</td>
-                                <td style="text-align:right">16721206</td>
-                                <td style="text-align:right">23726094</td>
-                                <td style="text-align:right">23674796</td>
-                                <td style="text-align:right">24604793</td>
-                                <td style="text-align:right">25742944</td>
-                                <td style="text-align:right">26067210</td>
-                                <td style="text-align:right">10407975</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Morgantown, WV</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">1363463</td>
-                                <td style="text-align:right">2408935</td>
-                                <td style="text-align:right">2299875</td>
-                                <td style="text-align:right">2335375</td>
-                                <td style="text-align:right">2083575</td>
-                                <td style="text-align:right">2031521</td>
-                                <td style="text-align:right">1585701</td>
-                                <td style="text-align:right">1744629</td>
-                                <td style="text-align:right">405835</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Nashville-Davidson, TN</td>
-                                <td style="text-align:right">281173</td>
-                                <td style="text-align:right">264874</td>
-                                <td style="text-align:right">243496</td>
-                                <td style="text-align:right">258023</td>
-                                <td style="text-align:right">273878</td>
-                                <td style="text-align:right">283174</td>
-                                <td style="text-align:right">299112</td>
-                                <td style="text-align:right">298765</td>
-                                <td style="text-align:right">293314</td>
-                                <td style="text-align:right">77245</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">New Orleans, LA</td>
-                                <td style="text-align:right">6602396</td>
-                                <td style="text-align:right">7228998</td>
-                                <td style="text-align:right">8650376</td>
-                                <td style="text-align:right">7457260</td>
-                                <td style="text-align:right">7281648</td>
-                                <td style="text-align:right">8074975</td>
-                                <td style="text-align:right">8097699</td>
-                                <td style="text-align:right">7747491</td>
-                                <td style="text-align:right">5289326</td>
-                                <td style="text-align:right">2014256</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">New York-Newark, NY-NJ-CT</td>
-                                <td style="text-align:right">2883841588</td>
-                                <td style="text-align:right">2938021192</td>
-                                <td style="text-align:right">3037540313</td>
-                                <td style="text-align:right">3146508930</td>
-                                <td style="text-align:right">3058851663</td>
-                                <td style="text-align:right">3081287401</td>
-                                <td style="text-align:right">3102333329</td>
-                                <td style="text-align:right">3037490483</td>
-                                <td style="text-align:right">3141606016</td>
-                                <td style="text-align:right">1257302472</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Oklahoma City, OK</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">365678</td>
-                                <td style="text-align:right">531726</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Orlando, FL</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">616411</td>
-                                <td style="text-align:right">972546</td>
-                                <td style="text-align:right">887224</td>
-                                <td style="text-align:right">851881</td>
-                                <td style="text-align:right">1114859</td>
-                                <td style="text-align:right">1571656</td>
-                                <td style="text-align:right">749544</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Philadelphia, PA-NJ-DE-MD</td>
-                                <td style="text-align:right">177133051</td>
-                                <td style="text-align:right">176161323</td>
-                                <td style="text-align:right">176846589</td>
-                                <td style="text-align:right">174389854</td>
-                                <td style="text-align:right">176782987</td>
-                                <td style="text-align:right">169157443</td>
-                                <td style="text-align:right">164146848</td>
-                                <td style="text-align:right">163833230</td>
-                                <td style="text-align:right">163561943</td>
-                                <td style="text-align:right">64457817</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Phoenix-Mesa, AZ</td>
-                                <td style="text-align:right">13161638</td>
-                                <td style="text-align:right">14042008</td>
-                                <td style="text-align:right">14226293</td>
-                                <td style="text-align:right">14263662</td>
-                                <td style="text-align:right">14759817</td>
-                                <td style="text-align:right">16303599</td>
-                                <td style="text-align:right">16268923</td>
-                                <td style="text-align:right">15406410</td>
-                                <td style="text-align:right">15060207</td>
-                                <td style="text-align:right">8557187</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Pittsburgh, PA</td>
-                                <td style="text-align:right">7882986</td>
-                                <td style="text-align:right">8992620</td>
-                                <td style="text-align:right">8857679</td>
-                                <td style="text-align:right">8775034</td>
-                                <td style="text-align:right">8707451</td>
-                                <td style="text-align:right">8354163</td>
-                                <td style="text-align:right">8368822</td>
-                                <td style="text-align:right">7920730</td>
-                                <td style="text-align:right">7795965</td>
-                                <td style="text-align:right">2608017</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Portland, ME</td>
-                                <td style="text-align:right">518483</td>
-                                <td style="text-align:right">555196</td>
-                                <td style="text-align:right">555947</td>
-                                <td style="text-align:right">496643</td>
-                                <td style="text-align:right">426828</td>
-                                <td style="text-align:right">493452</td>
-                                <td style="text-align:right">546056</td>
-                                <td style="text-align:right">533949</td>
-                                <td style="text-align:right">574692</td>
-                                <td style="text-align:right">146402</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Portland, OR-WA</td>
-                                <td style="text-align:right">46283738</td>
-                                <td style="text-align:right">45044570</td>
-                                <td style="text-align:right">43160415</td>
-                                <td style="text-align:right">43251812</td>
-                                <td style="text-align:right">43138924</td>
-                                <td style="text-align:right">45605293</td>
-                                <td style="text-align:right">44309754</td>
-                                <td style="text-align:right">44138193</td>
-                                <td style="text-align:right">42847276</td>
-                                <td style="text-align:right">21333552</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Sacramento, CA</td>
-                                <td style="text-align:right">12816310</td>
-                                <td style="text-align:right">13586505</td>
-                                <td style="text-align:right">13364617</td>
-                                <td style="text-align:right">12701588</td>
-                                <td style="text-align:right">11953072</td>
-                                <td style="text-align:right">11805176</td>
-                                <td style="text-align:right">11150668</td>
-                                <td style="text-align:right">9801510</td>
-                                <td style="text-align:right">10710049</td>
-                                <td style="text-align:right">5329875</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Salt Lake City-West Valley City, UT</td>
-                                <td style="text-align:right">16938895</td>
-                                <td style="text-align:right">19421608</td>
-                                <td style="text-align:right">22798371</td>
-                                <td style="text-align:right">24337460</td>
-                                <td style="text-align:right">24349673</td>
-                                <td style="text-align:right">23765873</td>
-                                <td style="text-align:right">23677677</td>
-                                <td style="text-align:right">22981884</td>
-                                <td style="text-align:right">22321887</td>
-                                <td style="text-align:right">10271888</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">San Diego, CA</td>
-                                <td style="text-align:right">36694624</td>
-                                <td style="text-align:right">35279118</td>
-                                <td style="text-align:right">38102558</td>
-                                <td style="text-align:right">44035646</td>
-                                <td style="text-align:right">45064757</td>
-                                <td style="text-align:right">42273875</td>
-                                <td style="text-align:right">41229640</td>
-                                <td style="text-align:right">40977876</td>
-                                <td style="text-align:right">41885780</td>
-                                <td style="text-align:right">23481904</td>
+                                <td style="text-align:right">Chicago, IL-IN</td>
+                                <td style="text-align:right">348981827</td>
+                                <td style="text-align:right">355038614</td>
+                                <td style="text-align:right">341387596</td>
+                                <td style="text-align:right">316497247</td>
+                                <td style="text-align:right">312929184</td>
+                                <td style="text-align:right">296070843</td>
+                                <td style="text-align:right">286327597</td>
+                                <td style="text-align:right">277640151</td>
+                                <td style="text-align:right">271012553</td>
+                                <td style="text-align:right">138687104</td>
                             </tr>
                             <tr>
                                 <td style="text-align:right">San Francisco-Oakland, CA</td>
-                                <td style="text-align:right">185128530</td>
-                                <td style="text-align:right">195606009</td>
-                                <td style="text-align:right">198858331</td>
-                                <td style="text-align:right">219172443</td>
-                                <td style="text-align:right">217874636</td>
-                                <td style="text-align:right">217498595</td>
-                                <td style="text-align:right">211265141</td>
-                                <td style="text-align:right">210599845</td>
-                                <td style="text-align:right">207373377</td>
-                                <td style="text-align:right">54980192</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">San Jose, CA</td>
-                                <td style="text-align:right">10219464</td>
-                                <td style="text-align:right">10483460</td>
-                                <td style="text-align:right">10864913</td>
-                                <td style="text-align:right">11366605</td>
-                                <td style="text-align:right">11028467</td>
-                                <td style="text-align:right">9926937</td>
-                                <td style="text-align:right">8659796</td>
-                                <td style="text-align:right">8535960</td>
-                                <td style="text-align:right">8350771</td>
-                                <td style="text-align:right">3175194</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">San Juan, PR</td>
-                                <td style="text-align:right">10769989</td>
-                                <td style="text-align:right">11023723</td>
-                                <td style="text-align:right">10993112</td>
-                                <td style="text-align:right">10088183</td>
-                                <td style="text-align:right">8505389</td>
-                                <td style="text-align:right">7897414</td>
-                                <td style="text-align:right">4835070</td>
-                                <td style="text-align:right">5193328</td>
-                                <td style="text-align:right">5234509</td>
-                                <td style="text-align:right">1137544</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Santa Rosa, CA</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">289506</td>
-                                <td style="text-align:right">717021</td>
-                                <td style="text-align:right">717913</td>
-                                <td style="text-align:right">247989</td>
+                                <td style="text-align:right">242027353</td>
+                                <td style="text-align:right">244610548</td>
+                                <td style="text-align:right">244555735</td>
+                                <td style="text-align:right">246393130</td>
+                                <td style="text-align:right">243858062</td>
+                                <td style="text-align:right">245791226</td>
+                                <td style="text-align:right">239267147</td>
+                                <td style="text-align:right">239595952</td>
+                                <td style="text-align:right">237528820</td>
+                                <td style="text-align:right">112432747</td>
                             </tr>
                             <tr>
                                 <td style="text-align:right">Seattle, WA</td>
-                                <td style="text-align:right">12048088</td>
-                                <td style="text-align:right">15393499</td>
-                                <td style="text-align:right">16513980</td>
-                                <td style="text-align:right">18143144</td>
-                                <td style="text-align:right">19270832</td>
-                                <td style="text-align:right">27863422</td>
-                                <td style="text-align:right">31967815</td>
-                                <td style="text-align:right">33706879</td>
-                                <td style="text-align:right">34113689</td>
-                                <td style="text-align:right">10674886</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">St. Louis, MO-IL</td>
-                                <td style="text-align:right">16505238</td>
-                                <td style="text-align:right">17128317</td>
-                                <td style="text-align:right">17395931</td>
-                                <td style="text-align:right">17181985</td>
-                                <td style="text-align:right">16081738</td>
-                                <td style="text-align:right">15343956</td>
-                                <td style="text-align:right">14115287</td>
-                                <td style="text-align:right">13220212</td>
-                                <td style="text-align:right">13087672</td>
-                                <td style="text-align:right">6746245</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Stockton, CA</td>
-                                <td style="text-align:right">756719</td>
-                                <td style="text-align:right">850992</td>
-                                <td style="text-align:right">1021771</td>
-                                <td style="text-align:right">1153875</td>
-                                <td style="text-align:right">1255203</td>
-                                <td style="text-align:right">1294688</td>
-                                <td style="text-align:right">1322180</td>
-                                <td style="text-align:right">1479150</td>
-                                <td style="text-align:right">1491754</td>
-                                <td style="text-align:right">399181</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Tampa-St. Petersburg, FL</td>
-                                <td style="text-align:right">383785</td>
-                                <td style="text-align:right">301516</td>
-                                <td style="text-align:right">296730</td>
-                                <td style="text-align:right">275621</td>
-                                <td style="text-align:right">286097</td>
-                                <td style="text-align:right">294857</td>
-                                <td style="text-align:right">308590</td>
-                                <td style="text-align:right">521964</td>
-                                <td style="text-align:right">936735</td>
-                                <td style="text-align:right">439687</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Tucson, AZ</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">-</td>
-                                <td style="text-align:right">583623</td>
-                                <td style="text-align:right">993286</td>
-                                <td style="text-align:right">911998</td>
-                                <td style="text-align:right">892406</td>
-                                <td style="text-align:right">907520</td>
-                                <td style="text-align:right">873142</td>
-                                <td style="text-align:right">394850</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:right">Virginia Beach, VA</td>
-                                <td style="text-align:right">639031</td>
-                                <td style="text-align:right">1651310</td>
-                                <td style="text-align:right">1654104</td>
-                                <td style="text-align:right">1604911</td>
-                                <td style="text-align:right">1454979</td>
-                                <td style="text-align:right">1391329</td>
-                                <td style="text-align:right">1402316</td>
-                                <td style="text-align:right">1462647</td>
-                                <td style="text-align:right">1345122</td>
-                                <td style="text-align:right">650306</td>
+                                <td style="text-align:right">178619065</td>
+                                <td style="text-align:right">181227920</td>
+                                <td style="text-align:right">185062057</td>
+                                <td style="text-align:right">189516956</td>
+                                <td style="text-align:right">190975299</td>
+                                <td style="text-align:right">191179145</td>
+                                <td style="text-align:right">191891515</td>
+                                <td style="text-align:right">193002452</td>
+                                <td style="text-align:right">190876257</td>
+                                <td style="text-align:right">91823728</td>
                             </tr>
                             <tr>
                                 <td style="text-align:right">Washington, DC-VA-MD</td>
-                                <td style="text-align:right">292335219</td>
-                                <td style="text-align:right">283751812</td>
-                                <td style="text-align:right">277926712</td>
-                                <td style="text-align:right">275028129</td>
-                                <td style="text-align:right">264378619</td>
-                                <td style="text-align:right">237787542</td>
-                                <td style="text-align:right">235719880</td>
-                                <td style="text-align:right">233735374</td>
-                                <td style="text-align:right">243828622</td>
-                                <td style="text-align:right">70055560</td>
+                                <td style="text-align:right">191275669</td>
+                                <td style="text-align:right">194852891</td>
+                                <td style="text-align:right">197102651</td>
+                                <td style="text-align:right">196507473</td>
+                                <td style="text-align:right">190338767</td>
+                                <td style="text-align:right">181043994</td>
+                                <td style="text-align:right">175504013</td>
+                                <td style="text-align:right">173046088</td>
+                                <td style="text-align:right">177143054</td>
+                                <td style="text-align:right">82765894</td>
                             </tr>
                             <tr>
-                                <th style="text-align:right">Total</td>
-                                    <th style="text-align:right">4633101336</td>
-                                        <th style="text-align:right">4748759983</td>
-                                            <th style="text-align:right">4862712685</td>
-                                                <th style="text-align:right">5018557525</td>
-                                                    <th style="text-align:right">4910062197</td>
-                                                        <th style="text-align:right">4906963173</td>
-                                                            <th style="text-align:right">4891389555</td>
-                                                                <th style="text-align:right">4794996459</td>
-                                                                    <th style="text-align:right">4867827806</td>
-                                                                        <th style="text-align:right">1897738532</td>
+                                <td style="text-align:right">Philadelphia, PA-NJ-DE-MD</td>
+                                <td style="text-align:right">181377595</td>
+                                <td style="text-align:right">195293472</td>
+                                <td style="text-align:right">202781322</td>
+                                <td style="text-align:right">193047677</td>
+                                <td style="text-align:right">195817494</td>
+                                <td style="text-align:right">188183479</td>
+                                <td style="text-align:right">179248153</td>
+                                <td style="text-align:right">172880643</td>
+                                <td style="text-align:right">167373515</td>
+                                <td style="text-align:right">81826967</td>
                             </tr>
-
-
-
+                            <tr>
+                                <td style="text-align:right">Boston, MA-NH-RI</td>
+                                <td style="text-align:right">128235903</td>
+                                <td style="text-align:right">131451133</td>
+                                <td style="text-align:right">129810714</td>
+                                <td style="text-align:right">140286126</td>
+                                <td style="text-align:right">140873635</td>
+                                <td style="text-align:right">132907576</td>
+                                <td style="text-align:right">130148828</td>
+                                <td style="text-align:right">127229439</td>
+                                <td style="text-align:right">126249938</td>
+                                <td style="text-align:right">64894759</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Miami, FL</td>
+                                <td style="text-align:right">131840835</td>
+                                <td style="text-align:right">135612639</td>
+                                <td style="text-align:right">136102282</td>
+                                <td style="text-align:right">133214965</td>
+                                <td style="text-align:right">124101878</td>
+                                <td style="text-align:right">109903697</td>
+                                <td style="text-align:right">99368731</td>
+                                <td style="text-align:right">92959080</td>
+                                <td style="text-align:right">90564269</td>
+                                <td style="text-align:right">57372748</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Baltimore, MD</td>
+                                <td style="text-align:right">87378290</td>
+                                <td style="text-align:right">76035907</td>
+                                <td style="text-align:right">79868847</td>
+                                <td style="text-align:right">85428523</td>
+                                <td style="text-align:right">86610944</td>
+                                <td style="text-align:right">83917075</td>
+                                <td style="text-align:right">77015429</td>
+                                <td style="text-align:right">74220748</td>
+                                <td style="text-align:right">73648860</td>
+                                <td style="text-align:right">45484833</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Houston, TX</td>
+                                <td style="text-align:right">71140333</td>
+                                <td style="text-align:right">70835584</td>
+                                <td style="text-align:right">73271097</td>
+                                <td style="text-align:right">72953143</td>
+                                <td style="text-align:right">71236942</td>
+                                <td style="text-align:right">71267214</td>
+                                <td style="text-align:right">70638753</td>
+                                <td style="text-align:right">71513307</td>
+                                <td style="text-align:right">72190335</td>
+                                <td style="text-align:right">43279447</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Las Vegas-Henderson, NV</td>
+                                <td style="text-align:right">59080277</td>
+                                <td style="text-align:right">61738888</td>
+                                <td style="text-align:right">60842016</td>
+                                <td style="text-align:right">64252991</td>
+                                <td style="text-align:right">68224053</td>
+                                <td style="text-align:right">65749477</td>
+                                <td style="text-align:right">65242105</td>
+                                <td style="text-align:right">66205830</td>
+                                <td style="text-align:right">66921123</td>
+                                <td style="text-align:right">38646244</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Denver-Aurora, CO</td>
+                                <td style="text-align:right">77414329</td>
+                                <td style="text-align:right">78076781</td>
+                                <td style="text-align:right">77780360</td>
+                                <td style="text-align:right">78126061</td>
+                                <td style="text-align:right">76960544</td>
+                                <td style="text-align:right">74665311</td>
+                                <td style="text-align:right">66687910</td>
+                                <td style="text-align:right">71949089</td>
+                                <td style="text-align:right">71078431</td>
+                                <td style="text-align:right">37006484</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Atlanta, GA</td>
+                                <td style="text-align:right">72208420</td>
+                                <td style="text-align:right">69554318</td>
+                                <td style="text-align:right">68531375</td>
+                                <td style="text-align:right">67910299</td>
+                                <td style="text-align:right">70038241</td>
+                                <td style="text-align:right">66001692</td>
+                                <td style="text-align:right">63644033</td>
+                                <td style="text-align:right">59394691</td>
+                                <td style="text-align:right">59391389</td>
+                                <td style="text-align:right">35848248</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Portland, OR-WA</td>
+                                <td style="text-align:right">67072722</td>
+                                <td style="text-align:right">68320606</td>
+                                <td style="text-align:right">68017590</td>
+                                <td style="text-align:right">71445662</td>
+                                <td style="text-align:right">70669676</td>
+                                <td style="text-align:right">67711691</td>
+                                <td style="text-align:right">67125893</td>
+                                <td style="text-align:right">66515808</td>
+                                <td style="text-align:right">67449477</td>
+                                <td style="text-align:right">35509541</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Urban Honolulu, HI</td>
+                                <td style="text-align:right">72235802</td>
+                                <td style="text-align:right">72470645</td>
+                                <td style="text-align:right">69946425</td>
+                                <td style="text-align:right">69042480</td>
+                                <td style="text-align:right">69783000</td>
+                                <td style="text-align:right">67995376</td>
+                                <td style="text-align:right">65958510</td>
+                                <td style="text-align:right">64850071</td>
+                                <td style="text-align:right">62444501</td>
+                                <td style="text-align:right">32001796</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Minneapolis-St. Paul, MN-WI</td>
+                                <td style="text-align:right">83432714</td>
+                                <td style="text-align:right">83475970</td>
+                                <td style="text-align:right">84140072</td>
+                                <td style="text-align:right">82262965</td>
+                                <td style="text-align:right">75266943</td>
+                                <td style="text-align:right">72537581</td>
+                                <td style="text-align:right">70752686</td>
+                                <td style="text-align:right">68397033</td>
+                                <td style="text-align:right">65454876</td>
+                                <td style="text-align:right">30425082</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">San Diego, CA</td>
+                                <td style="text-align:right">65191386</td>
+                                <td style="text-align:right">66751537</td>
+                                <td style="text-align:right">65420835</td>
+                                <td style="text-align:right">67119531</td>
+                                <td style="text-align:right">65002216</td>
+                                <td style="text-align:right">60800181</td>
+                                <td style="text-align:right">57838006</td>
+                                <td style="text-align:right">56651583</td>
+                                <td style="text-align:right">56739468</td>
+                                <td style="text-align:right">29125055</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Phoenix-Mesa, AZ</td>
+                                <td style="text-align:right">58610299</td>
+                                <td style="text-align:right">61388946</td>
+                                <td style="text-align:right">61423074</td>
+                                <td style="text-align:right">60368226</td>
+                                <td style="text-align:right">56859119</td>
+                                <td style="text-align:right">53310040</td>
+                                <td style="text-align:right">56235213</td>
+                                <td style="text-align:right">56721218</td>
+                                <td style="text-align:right">54174915</td>
+                                <td style="text-align:right">28600824</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Pittsburgh, PA</td>
+                                <td style="text-align:right">57471384</td>
+                                <td style="text-align:right">58417139</td>
+                                <td style="text-align:right">57102382</td>
+                                <td style="text-align:right">58324102</td>
+                                <td style="text-align:right">57511529</td>
+                                <td style="text-align:right">57404260</td>
+                                <td style="text-align:right">56643244</td>
+                                <td style="text-align:right">58253631</td>
+                                <td style="text-align:right">58154323</td>
+                                <td style="text-align:right">28486694</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Dallas-Fort Worth-Arlington, TX</td>
+                                <td style="text-align:right">47212405</td>
+                                <td style="text-align:right">49856668</td>
+                                <td style="text-align:right">47507068</td>
+                                <td style="text-align:right">48380369</td>
+                                <td style="text-align:right">45476276</td>
+                                <td style="text-align:right">42190573</td>
+                                <td style="text-align:right">39933562</td>
+                                <td style="text-align:right">39236056</td>
+                                <td style="text-align:right">45258290</td>
+                                <td style="text-align:right">27795820</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">San Antonio, TX</td>
+                                <td style="text-align:right">46146794</td>
+                                <td style="text-align:right">47507874</td>
+                                <td style="text-align:right">45341036</td>
+                                <td style="text-align:right">43216240</td>
+                                <td style="text-align:right">39607457</td>
+                                <td style="text-align:right">38753953</td>
+                                <td style="text-align:right">37947805</td>
+                                <td style="text-align:right">38994486</td>
+                                <td style="text-align:right">44039267</td>
+                                <td style="text-align:right">27758412</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Milwaukee, WI</td>
+                                <td style="text-align:right">47336788</td>
+                                <td style="text-align:right">47496729</td>
+                                <td style="text-align:right">44239967</td>
+                                <td style="text-align:right">43069164</td>
+                                <td style="text-align:right">41270601</td>
+                                <td style="text-align:right">42176687</td>
+                                <td style="text-align:right">36467454</td>
+                                <td style="text-align:right">32255943</td>
+                                <td style="text-align:right">30686746</td>
+                                <td style="text-align:right">18926797</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Austin, TX</td>
+                                <td style="text-align:right">33530397</td>
+                                <td style="text-align:right">36055123</td>
+                                <td style="text-align:right">34997940</td>
+                                <td style="text-align:right">33173442</td>
+                                <td style="text-align:right">33335306</td>
+                                <td style="text-align:right">29161233</td>
+                                <td style="text-align:right">28788179</td>
+                                <td style="text-align:right">28881217</td>
+                                <td style="text-align:right">30871469</td>
+                                <td style="text-align:right">18263235</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Tampa-St. Petersburg, FL</td>
+                                <td style="text-align:right">28983788</td>
+                                <td style="text-align:right">30209810</td>
+                                <td style="text-align:right">30688473</td>
+                                <td style="text-align:right">31203989</td>
+                                <td style="text-align:right">30722404</td>
+                                <td style="text-align:right">28048247</td>
+                                <td style="text-align:right">25935566</td>
+                                <td style="text-align:right">25372398</td>
+                                <td style="text-align:right">27092852</td>
+                                <td style="text-align:right">17942147</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">St. Louis, MO-IL</td>
+                                <td style="text-align:right">30955549</td>
+                                <td style="text-align:right">33159137</td>
+                                <td style="text-align:right">33137586</td>
+                                <td style="text-align:right">33643670</td>
+                                <td style="text-align:right">31951576</td>
+                                <td style="text-align:right">29391003</td>
+                                <td style="text-align:right">27421965</td>
+                                <td style="text-align:right">25987473</td>
+                                <td style="text-align:right">25140377</td>
+                                <td style="text-align:right">15454234</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Detroit, MI</td>
+                                <td style="text-align:right">47304266</td>
+                                <td style="text-align:right">44180136</td>
+                                <td style="text-align:right">39970272</td>
+                                <td style="text-align:right">35900505</td>
+                                <td style="text-align:right">35980820</td>
+                                <td style="text-align:right">36739877</td>
+                                <td style="text-align:right">33524523</td>
+                                <td style="text-align:right">33533149</td>
+                                <td style="text-align:right">33403054</td>
+                                <td style="text-align:right">15186938</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Orlando, FL</td>
+                                <td style="text-align:right">28487964</td>
+                                <td style="text-align:right">29530845</td>
+                                <td style="text-align:right">30005027</td>
+                                <td style="text-align:right">30105716</td>
+                                <td style="text-align:right">28800407</td>
+                                <td style="text-align:right">26930409</td>
+                                <td style="text-align:right">26009963</td>
+                                <td style="text-align:right">24777261</td>
+                                <td style="text-align:right">24652502</td>
+                                <td style="text-align:right">15141322</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Cleveland, OH</td>
+                                <td style="text-align:right">38530482</td>
+                                <td style="text-align:right">40017992</td>
+                                <td style="text-align:right">40746014</td>
+                                <td style="text-align:right">41087723</td>
+                                <td style="text-align:right">38794743</td>
+                                <td style="text-align:right">36175047</td>
+                                <td style="text-align:right">32413624</td>
+                                <td style="text-align:right">28054589</td>
+                                <td style="text-align:right">25805956</td>
+                                <td style="text-align:right">14120065</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">Salt Lake City-West Valley City, UT</td>
+                                <td style="text-align:right">24619139</td>
+                                <td style="text-align:right">22925725</td>
+                                <td style="text-align:right">21467007</td>
+                                <td style="text-align:right">21942084</td>
+                                <td style="text-align:right">22371911</td>
+                                <td style="text-align:right">21756041</td>
+                                <td style="text-align:right">21401242</td>
+                                <td style="text-align:right">21194447</td>
+                                <td style="text-align:right">22256274</td>
+                                <td style="text-align:right">13287406</td>
+                            </tr>
 
                         </tbody>
                     </table>
